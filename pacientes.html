@@ -1,0 +1,59 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes - PlasmoScan</title>
+    <link rel="stylesheet" href="CSSweb.css">
+</head>
+<body class="pacientes">
+
+    <!-- Barra superior -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de PlasmoScan" height="40">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="iniciosesion.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="contenido">
+            <h2>Datos de pacientes</h2>
+            <p>Aquí se mostrará la información de los pacientes una vez esté disponible.</p>
+        </section>
+    </main>
+	<script>
+	function mostrarDatos() {
+		document.getElementById('inicio').style.display = 'none';
+		document.getElementById('datos').style.display = 'block';
+
+		let xml = new XMLHttpRequest();
+		let xsl = new XMLHttpRequest();
+
+		xml.open("GET", "XMLweb.xml", false);
+		xml.send();
+		let xmlData = xml.responseXML;
+
+		xsl.open("GET", "XSLTweb.xslt", false);
+		xsl.send();
+		let xslData = xsl.responseXML;
+
+		if (window.XSLTProcessor) {
+			let processor = new XSLTProcessor();
+			processor.importStylesheet(xslData);
+			let result = processor.transformToFragment(xmlData, document);
+			document.getElementById("contenido").innerHTML = '';
+			document.getElementById("contenido").appendChild(result);
+		} else {
+			document.getElementById("contenido").innerText = "Tu navegador no soporta XSLT.";
+		}
+	}
+	</script>
+</body>
+</html>
