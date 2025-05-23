@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+	<xs:element name="Pacientes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Paciente">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Nombre" type="xs:string"/>
+							<xs:element name="Apellido" type="xs:string"/>
+							<xs:element name="Edad" type="xs:integer"/>
+							<xs:element name="Sexo">
+								<xs:simpleType> 
+									<xs:restriction base="xs:string"> 
+										<xs:enumeration value="Mujer"/> 
+										<xs:enumeration value="Hombre"/>  
+										<xs:enumeration value="Otro"/>
+							<xs:element name="Foto" type="xs:imagedata"/>
+									</xs:restriction> 
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
