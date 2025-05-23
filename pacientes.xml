@@ -1,1 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<!DOCTYPE Pacientes SYSTEM "DTDweb.dtd">--><?xml-stylesheet type="text/xsl" href="XSLTweb.xslt"?><Pacientes>
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDweb.xsd"-->
+
+
+
+<Paciente>
+      <Nombre>Ainara</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250522_181031.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Olatz</Nombre>
+      <Apellido>Alzuri</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_085819.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Maren</Nombre>
+      <Apellido>Fernandez</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_090052.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Rober</Nombre>
+      <Apellido>Howe</Apellido>
+      <Edad>20</Edad>
+      <Sexo>Hombre</Sexo>
+      <Foto>imagenes\foto_20250523_090028.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Maite</Nombre>
+      <Apellido>Gonzalez</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_090359.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Nuria</Nombre>
+      <Apellido>Niño</Apellido>
+      <Edad>22</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_090334.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Olatz</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Edad>24</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_092228.tiff</Foto>
+   </Paciente>
+   <Paciente>
+      <Nombre>Naroa</Nombre>
+      <Apellido>Iturrioz</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+	  </Paciente>
+</Pacientes>
