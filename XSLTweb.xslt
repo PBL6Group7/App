@@ -1,27 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:output method="html" encoding="UTF-8"/>
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
 
-<xsl:template match="/">
-    <div class="header">
-        <h1>PlasmoScan</h1>
-        <p>Somos una empresa dedicada al diagnóstico visual de células infectadas por malaria mediante microscopía e inteligencia artificial.</p>
-    </div>
+  <xsl:output method="html" indent="yes"/>
 
-    <div class="contenedor">
-        <xsl:for-each select="pacientes/paciente">
-            <div class="paciente">
-                <h2><xsl:value-of select="nombre"/></h2>
-                <p>Edad: <xsl:value-of select="edad"/></p>
-                <p>Diagnóstico: <xsl:value-of select="diagnostico"/></p>
+  <xsl:template match="/"> 
+    <html> 
+      <head>
+        <title>Resultados de diagnóstico</title>
+      </head>
+      <body> 
+        <h2>Resultados de diagnóstico</h2> 
+        <table border="1"> 
+          <tr> 
+            <th>Nombre</th> 
+            <th>Apellido</th> 
+            <th>Edad</th>
+            <th>Sexo</th>
+            <th>Foto</th>
+          </tr> 
+          <xsl:for-each select="Pacientes/Paciente"> 
+            <tr> 
+              <td><xsl:value-of select="Nombre"/></td> 
+              <td><xsl:value-of select="Apellido"/></td> 
+              <td><xsl:value-of select="Edad"/></td>
+              <td><xsl:value-of select="Sexo"/></td>
+              <td>
                 <img>
-                    <xsl:attribute name="src">
-                        <xsl:value-of select="imagen"/>
-                    </xsl:attribute>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="Foto"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="alt">
+                    <xsl:value-of select="Nombre"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="style">
+                    width:120px; border:1px solid black;
+                  </xsl:attribute>
                 </img>
-            </div>
-        </xsl:for-each>
-    </div>
-</xsl:template>
+              </td>
+            </tr> 
+          </xsl:for-each> 
+        </table> 
+      </body> 
+    </html>
+  </xsl:template>
 </xsl:stylesheet>
