@@ -1,0 +1,6 @@
+<!ELEMENT Pacientes (Paciente+)>
+<!ELEMENT Paciente (Nombre, Apellido, Edad, Sexo)> 
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellido (#PCDATA)>
+<!ELEMENT Edad (#PCDATA)>
+<!ELEMENT Sexo (#PCDATA)>
