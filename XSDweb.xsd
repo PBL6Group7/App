@@ -15,9 +15,10 @@
 										<xs:enumeration value="Mujer"/> 
 										<xs:enumeration value="Hombre"/>  
 										<xs:enumeration value="Otro"/>
-							<xs:element name="Foto" type="xs:imagedata"/>
 									</xs:restriction> 
 								</xs:simpleType>
+							<xs:element name="Foto" type="xs:imagedata"/>
+							<xs:element name="ID" type="xs:string"/>
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
