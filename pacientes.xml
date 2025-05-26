@@ -10,4 +10,11 @@
       <Sexo>Mujer</Sexo>
       <Foto>imagenes\foto_20250526_083803.jpg</Foto>
    </Paciente>
+   <Paciente>
+      <ID>888N</ID>
+      <Nombre>Olatz</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Edad>24</Edad>
+      <Sexo>Mujer</Sexo>
+   </Paciente>
 </Pacientes>
