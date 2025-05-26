@@ -12,7 +12,8 @@
         <h2>Resultados de diagnóstico</h2> 
         <table border="1"> 
           <tr> 
-            <th>Nombre</th> 
+             <th>ID</th>
+			<th>Nombre</th> 
             <th>Apellido</th> 
             <th>Edad</th>
             <th>Sexo</th>
@@ -20,6 +21,7 @@
           </tr> 
           <xsl:for-each select="Pacientes/Paciente"> 
             <tr> 
+			  <td><xsl:value-of select="ID"/></td> 
               <td><xsl:value-of select="Nombre"/></td> 
               <td><xsl:value-of select="Apellido"/></td> 
               <td><xsl:value-of select="Edad"/></td>
