@@ -23,4 +23,20 @@
       <Sexo>Mujer</Sexo>
       <Foto>imagenes\foto_20250523_090052.jpg</Foto>
    </Paciente>
+   <Paciente>
+      <ID/>
+      <Nombre>Olatz</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Edad>24</Edad>
+      <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250523_213357.png</Foto>
+   </Paciente>
+   <Paciente>
+      <ID/>
+      <Nombre>Javi</Nombre>
+      <Apellido>Lopez</Apellido>
+      <Edad>40</Edad>
+      <Sexo>Hombre</Sexo>
+      <Foto>imagenes\foto_20250523_213126.jpg</Foto>
+   </Paciente>
 </Pacientes>
