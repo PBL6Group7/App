@@ -8,7 +8,7 @@
       <Apellido>Lopez</Apellido>
       <Edad>20</Edad>
       <Sexo>Mujer</Sexo>
-      <Foto>imagenes\foto_20250526_083803.jpg</Foto>
+      <Foto>imagenes\foto_20250527_085227.jpg</Foto>
    </Paciente>
    <Paciente>
       <ID>888N</ID>
@@ -16,5 +16,13 @@
       <Apellido>Lopez</Apellido>
       <Edad>24</Edad>
       <Sexo>Mujer</Sexo>
+      <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+   </Paciente>
+   <Paciente>
+      <ID>1212</ID>
+      <Nombre>Ainara</Nombre>
+      <Apellido>Iturrioz</Apellido>
+      <Edad>50</Edad>
+      <Sexo>Otro</Sexo>
    </Paciente>
 </Pacientes>
