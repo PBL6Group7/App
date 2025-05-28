@@ -247,3 +247,49 @@ body.pacientes {
 	text-align: left;
     color: black;
 }
+main.pacientes {
+/* TABLA DE PACIENTES */
+table {
+    width: 90%;
+    margin: 80px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* FOTO DE PACIENTE */
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #004080;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+}
