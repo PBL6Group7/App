@@ -6,6 +6,7 @@
 				<xs:element name="Paciente">
 					<xs:complexType>
 						<xs:sequence>
+							<xs:element name="ID" type="xs:string"/>
 							<xs:element name="Nombre" type="xs:string"/>
 							<xs:element name="Apellido" type="xs:string"/>
 							<xs:element name="Edad" type="xs:integer"/>
