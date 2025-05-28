@@ -25,4 +25,12 @@
       <Edad>50</Edad>
       <Sexo>Otro</Sexo>
    </Paciente>
+   <Paciente>
+      <ID>004</ID>
+      <Nombre>Rober</Nombre>
+      <Apellido>Howe</Apellido>
+      <Edad>20</Edad>
+      <Sexo>Hombre</Sexo>
+      <Foto>imagenes\foto_20250528_090847.jpg</Foto>
+   </Paciente>
 </Pacientes>
