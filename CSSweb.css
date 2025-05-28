@@ -247,7 +247,7 @@ body.pacientes {
 	text-align: left;
     color: black;
 }
-main.pacientes {
+
 /* TABLA DE PACIENTES */
 table {
     width: 90%;
@@ -291,5 +291,4 @@ td img {
 
 td img:hover {
     transform: scale(1.1);
-}
 }
