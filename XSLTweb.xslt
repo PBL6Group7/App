@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
-
-  <xsl:output method="html" indent="yes"/>
-
   <xsl:template match="/"> 
     <html> 
       <head>
@@ -12,7 +9,7 @@
         <h2>Resultados de diagnóstico</h2> 
         <table border="1"> 
           <tr> 
-             <th>ID</th>
+            <th>ID</th>
 			<th>Nombre</th> 
             <th>Apellido</th> 
             <th>Edad</th>
