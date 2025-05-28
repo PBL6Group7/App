@@ -4,6 +4,7 @@
     <html> 
       <head>
         <title>Resultados de diagnóstico</title>
+		<link rel="stylesheet" type="text/css" href="CSSweb.css"/>
       </head>
       <body> 
         <h2>Resultados de diagnóstico</h2> 
