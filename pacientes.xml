@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<!DOCTYPE Pacientes SYSTEM "DTDweb.dtd">--><?xml-stylesheet type="text/xsl" href="XSLTweb.xslt"?><Pacientes>
-<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDweb.xsd"-->
-
-<Paciente>
+<?xml-stylesheet type="text/xsl" href="XSLTweb.xslt"?><Pacientes>
+   <Paciente>
       <ID>1234</ID>
       <Nombre>Ainara</Nombre>
       <Apellido>Lopez</Apellido>
       <Edad>20</Edad>
       <Sexo>Mujer</Sexo>
-      <Foto>imagenes\foto_20250527_120900.jpg</Foto>
+	     <Historial>
+		       <Entrada>
+		          <Fecha>2025-05-28</Fecha>
+		          <Resultado>Positivo</Resultado>
+		          <Especie>Falciparum</Especie>
+		          <Foto>imagenes\foto_20250527_120900.jpg</Foto>
+		       </Entrada>
+		       <Entrada>
+		          <Fecha>2025-06-10</Fecha>
+		          <Resultado>Negativo</Resultado>
+		          <Especie>-</Especie>
+		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
+		       </Entrada>
+      </Historial>
    </Paciente>
    <Paciente>
       <ID>888N</ID>
@@ -16,7 +27,30 @@
       <Apellido>Lopez</Apellido>
       <Edad>24</Edad>
       <Sexo>Mujer</Sexo>
-      <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+	     <Historial>
+		       <Entrada>
+		          <Fecha>2025-08-31</Fecha>
+		          <Resultado>Positivo</Resultado>
+		          <Especie>Vivax</Especie>
+		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+		       </Entrada>
+		       <Entrada>
+		          <Fecha>2025-09-12</Fecha>
+		          <Resultado>Positivo</Resultado>
+		          <Especie>Vivax</Especie>
+		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+		       </Entrada>
+		       <Entrada>
+		          <Fecha>2025-10-25</Fecha>
+		          <Resultado>Negativo</Resultado>
+		          <Especie>-</Especie>
+		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
+		       </Entrada>
+         <Entrada>
+            <Fecha>2025-06-03</Fecha>
+            <Foto>imagenes\foto_20250602_120821.jpg</Foto>
+         </Entrada>
+      </Historial>
    </Paciente>
    <Paciente>
       <ID>1212</ID>
@@ -24,6 +58,14 @@
       <Apellido>Iturrioz</Apellido>
       <Edad>50</Edad>
       <Sexo>Otro</Sexo>
+	     <Historial>
+		       <Entrada>
+		          <Fecha>2025-04-10</Fecha>
+		          <Resultado>Negativo</Resultado>
+		          <Especie>-</Especie>
+		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+		       </Entrada>
+      </Historial>
    </Paciente>
    <Paciente>
       <ID>004</ID>
@@ -31,6 +73,63 @@
       <Apellido>Howe</Apellido>
       <Edad>20</Edad>
       <Sexo>Hombre</Sexo>
-      <Foto>imagenes\foto_20250528_090847.jpg</Foto>
+	     <Historial>
+		       <Entrada>
+		          <Fecha>2025-02-24</Fecha>
+		          <Resultado>Negativo</Resultado>
+		          <Especie>-</Especie>
+		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
+		       </Entrada>
+		       <Entrada>
+		          <Fecha>2025-04-16</Fecha>
+		          <Resultado>Positivo</Resultado>
+		          <Especie>Falciparum</Especie>
+		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
+		       </Entrada>
+         <Entrada>
+            <Fecha>2025-06-01</Fecha>
+            <Foto>imagenes\foto_20250602_094838.jpg</Foto>
+         </Entrada>
+      </Historial>
+   </Paciente>
+   <Paciente>
+      <ID>234B</ID>
+      <Nombre>Maren</Nombre>
+      <Apellido>Fernandez</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Historial>
+         <Entrada>
+            <Fecha>2025-06-02</Fecha>
+            <Foto>imagenes\foto_20250602_092925.jpg</Foto>
+            <Especie>Falciparum</Especie>
+         </Entrada>
+      </Historial>
+   </Paciente>
+   <Paciente>
+      <ID>12345678D</ID>
+      <Nombre>Juana</Nombre>
+      <Apellido>De Arco</Apellido>
+      <Edad>120</Edad>
+      <Sexo>Mujer</Sexo>
+      <Historial>
+         <Entrada>
+            <Fecha>2025-06-02</Fecha>
+            <Foto>imagenes\foto_20250602_095607.jpg</Foto>
+         </Entrada>
+      </Historial>
+   </Paciente>
+   <Paciente>
+      <ID>1234p</ID>
+      <Nombre>Carla</Nombre>
+      <Apellido>glez.</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Historial>
+         <Entrada>
+            <Fecha>2025-06-02</Fecha>
+            <Foto>imagenes\foto_20250602_120757.jpg</Foto>
+         </Entrada>
+      </Historial>
    </Paciente>
 </Pacientes>
