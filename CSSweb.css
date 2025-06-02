@@ -246,6 +246,7 @@ body.pacientes {
     color: #333;
 	text-align: left;
     color: black;
+	padding-top: 100px;
 }
 
 /* TABLA DE PACIENTES */
@@ -282,7 +283,7 @@ tr:hover {
 /* FOTO DE PACIENTE */
 td img {
     width: 100px;
-    height: 100px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #004080;
