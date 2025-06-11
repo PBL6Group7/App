@@ -19,6 +19,13 @@
 		          <Especie>-</Especie>
 		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
 		       </Entrada>
+         <Entrada>
+            <Fecha>2025-06-11</Fecha>
+            <Foto>imagenes\foto_20250611_093255.jpg</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_093312.png</FotoProcesada>
+            <Especie>Falciparum</Especie>
+         </Entrada>
       </Historial>
    </Paciente>
    <Paciente>
@@ -30,26 +37,22 @@
 	     <Historial>
 		       <Entrada>
 		          <Fecha>2025-08-31</Fecha>
-		          <Resultado>Positivo</Resultado>
+		          <Resultado>Malaria</Resultado>
 		          <Especie>Vivax</Especie>
 		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
 		       </Entrada>
 		       <Entrada>
 		          <Fecha>2025-09-12</Fecha>
-		          <Resultado>Positivo</Resultado>
+		          <Resultado>Malaria</Resultado>
 		          <Especie>Vivax</Especie>
 		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
 		       </Entrada>
 		       <Entrada>
 		          <Fecha>2025-10-25</Fecha>
-		          <Resultado>Negativo</Resultado>
+		          <Resultado>Sano</Resultado>
 		          <Especie>-</Especie>
 		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
 		       </Entrada>
-         <Entrada>
-            <Fecha>2025-06-03</Fecha>
-            <Foto>imagenes\foto_20250602_120821.jpg</Foto>
-         </Entrada>
       </Historial>
    </Paciente>
    <Paciente>
@@ -61,7 +64,7 @@
 	     <Historial>
 		       <Entrada>
 		          <Fecha>2025-04-10</Fecha>
-		          <Resultado>Negativo</Resultado>
+		          <Resultado>Sano</Resultado>
 		          <Especie>-</Especie>
 		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
 		       </Entrada>
@@ -76,20 +79,16 @@
 	     <Historial>
 		       <Entrada>
 		          <Fecha>2025-02-24</Fecha>
-		          <Resultado>Negativo</Resultado>
+		          <Resultado>Sano</Resultado>
 		          <Especie>-</Especie>
 		          <Foto>imagenes\foto_20250526_090850.jpg</Foto>
 		       </Entrada>
 		       <Entrada>
 		          <Fecha>2025-04-16</Fecha>
-		          <Resultado>Positivo</Resultado>
+		          <Resultado>Malaria</Resultado>
 		          <Especie>Falciparum</Especie>
 		          <Foto>imagenes\foto_20250528_090847.jpg</Foto>
 		       </Entrada>
-         <Entrada>
-            <Fecha>2025-06-01</Fecha>
-            <Foto>imagenes\foto_20250602_094838.jpg</Foto>
-         </Entrada>
       </Historial>
    </Paciente>
    <Paciente>
@@ -101,34 +100,9 @@
       <Historial>
          <Entrada>
             <Fecha>2025-06-02</Fecha>
+			<Resultado>Malaria</Resultado>
             <Foto>imagenes\foto_20250602_092925.jpg</Foto>
             <Especie>Falciparum</Especie>
-         </Entrada>
-      </Historial>
-   </Paciente>
-   <Paciente>
-      <ID>12345678D</ID>
-      <Nombre>Juana</Nombre>
-      <Apellido>De Arco</Apellido>
-      <Edad>120</Edad>
-      <Sexo>Mujer</Sexo>
-      <Historial>
-         <Entrada>
-            <Fecha>2025-06-02</Fecha>
-            <Foto>imagenes\foto_20250602_095607.jpg</Foto>
-         </Entrada>
-      </Historial>
-   </Paciente>
-   <Paciente>
-      <ID>1234p</ID>
-      <Nombre>Carla</Nombre>
-      <Apellido>glez.</Apellido>
-      <Edad>21</Edad>
-      <Sexo>Mujer</Sexo>
-      <Historial>
-         <Entrada>
-            <Fecha>2025-06-02</Fecha>
-            <Foto>imagenes\foto_20250602_120757.jpg</Foto>
          </Entrada>
       </Historial>
    </Paciente>
