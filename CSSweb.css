@@ -293,3 +293,77 @@ td img {
 td img:hover {
     transform: scale(1.1);
 }
+/*informacion */
+body.pagina-informacion {
+    background-color: #e6f0ff;
+    color: #003366;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.pagina-informacion h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.pagina-informacion p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.pagina-informacion img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.boton-descarga {
+    display: inline-block;
+    background-color: #0073e6; /* Azul oscuro */
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 40px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.boton-descarga:hover {
+    background-color: #0055aa;
+    transform: scale(1.05);
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* ← ESTA LÍNEA ES CLAVE */
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* ← CENTRA VERTICALMENTE */
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+}.etiqueta img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
