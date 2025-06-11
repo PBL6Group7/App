@@ -1,30 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
-	<xs:element name="Pacientes">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="Paciente">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="ID" type="xs:string"/>
-							<xs:element name="Nombre" type="xs:string"/>
-							<xs:element name="Apellido" type="xs:string"/>
-							<xs:element name="Edad" type="xs:integer"/>
-							<xs:element name="Sexo">
-								<xs:simpleType> 
-									<xs:restriction base="xs:string"> 
-										<xs:enumeration value="Mujer"/> 
-										<xs:enumeration value="Hombre"/>  
-										<xs:enumeration value="Otro"/>
-									</xs:restriction> 
-								</xs:simpleType>
-							<xs:element name="Foto" type="xs:imagedata"/>
-							<xs:element name="ID" type="xs:string"/>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+  <xs:element name="Pacientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Paciente" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string"/>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="Apellido" type="xs:string"/>
+              <xs:element name="Edad" type="xs:integer"/>
+              <xs:element name="Sexo">
+                <xs:simpleType> 
+                  <xs:restriction base="xs:string"> 
+                    <xs:enumeration value="Mujer"/> 
+                    <xs:enumeration value="Hombre"/>  
+                    <xs:enumeration value="Otro"/>
+                  </xs:restriction> 
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Historial">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Entrada" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Fecha" type="xs:date"/>
+                          <xs:element name="Resultado">
+						  <xs:simpleType> 
+							  <xs:restriction base="xs:string"> 
+								<xs:enumeration value="Sano"/> 
+								<xs:enumeration value="Malaria"/>  
+							  </xs:restriction> 
+						  </xs:simpleType>
+						  </xs:element>
+                          <xs:element name="Especie">
+						  <xs:simpleType> 
+							  <xs:restriction base="xs:string"> 
+								<xs:enumeration value="Falciparum"/> 
+								<xs:enumeration value="Vivax"/>  
+							  </xs:restriction> 
+						  </xs:simpleType>
+						  </xs:element>
+                          <xs:element name="Foto" type="xs:imagedata" minOccurs="0"/>
+                          <xs:element name="FotoProcesada" type="xs:imagedata" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
