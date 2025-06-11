@@ -43,10 +43,24 @@
               <td><xsl:value-of select="Fecha"/></td> 
               <td><xsl:value-of select="Resultado"/></td> 
               <td><xsl:value-of select="Especie"/></td>
+			  <td><xsl:value-of select="Parasitemia"/></td> 
 			   <td>
                 <img>
                   <xsl:attribute name="src">
                     <xsl:value-of select="Foto"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="alt">
+                    <xsl:value-of select="Nombre"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="style">
+                    width:120px; border:1px solid black;
+                  </xsl:attribute>
+                </img>
+              </td>
+			   <td>
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="Fotoprocesada"/>
                   </xsl:attribute>
                   <xsl:attribute name="alt">
                     <xsl:value-of select="Nombre"/>
