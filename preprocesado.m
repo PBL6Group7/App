@@ -124,16 +124,16 @@ else
     X_nueva_normalized = (X_nueva - mu) ./ sigma;
 
     clasesPredichas = predict (modelo4, X_nueva_normalized);
-    clasesPredichas=categorical(clasesPredichas,{'Falciparum','Vivax'})
+    clasesPredichas=categorical(clasesPredichas,{'Falciparum','Vivax'});
 
     conteos = countcats(clasesPredichas);
     cantidadFalciparum = conteos(1);
     cantidadVivax = conteos(2);
 
     if cantidadFalciparum > cantidadVivax
-        resultadoFinal = sprintf ("Falciparum")
+        resultadoFinal = sprintf ("Falciparum");
     else 
-        resultadoFinal = sprintf ("Vivax")
+        resultadoFinal = sprintf ("Vivax");
     end 
     imshow (I)
     hold on
@@ -148,10 +148,13 @@ else
     frame = getframe(gca);      
     I_parasitos = frame.cdata;
 end
-Iout = resultadoFinal; 
-Iimg= I_parasitos;
-if Iout=="Falciparum"
+fprintf('%d',cantidadVivax)
+    fprintf('%d',cantidadFalciparum)
+if resultadoFinal=="Falciparum"
     Ipar=cantidadFalciparum;
 else
     Ipar=cantidadVivax;
 end
+Iout = resultadoFinal; 
+Iimg= I_parasitos;
+
