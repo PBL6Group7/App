@@ -33,7 +33,9 @@
 			<th>Fecha</th> 
             <th>Resultado</th> 
             <th>Especie</th>
+			<th>Parasitemia</th>
 			<th>Foto</th>
+			<th>Fotoprocesada</th>
           </tr> 
           <xsl:for-each select="Pacientes/Paciente"> 
 		  <xsl:variable name="idPaciente" select="ID"/>
