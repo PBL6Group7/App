@@ -14,7 +14,15 @@
             <Resultado>Malaria</Resultado>
             <FotoProcesada>imagenesProcesadas\procesada_20250611_121011.jpg</FotoProcesada>
             <Especie>Vivax</Especie>
-            <Parasitemia>M</Parasitemia>
+            <Parasitemia>77</Parasitemia>
+         </Entrada>
+         <Entrada>
+            <Fecha>2025-06-12</Fecha>
+            <Foto>imagenes\foto_20250611_210258.jpg</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_210307.jpg</FotoProcesada>
+            <Especie>Falciparum</Especie>
+            <Parasitemia>206</Parasitemia>
          </Entrada>
       </Historial>
    </Paciente>
@@ -33,20 +41,12 @@
             <FotoProcesada>imagenesProcesadas\procesada_20250611_123330.jpg</FotoProcesada>
          </Entrada>
          <Entrada>
-            <Fecha>2025-06-03</Fecha>
-            <Foto>imagenes\foto_20250611_123354.jpg</Foto>
-            <Resultado>Malaria</Resultado>
-            <FotoProcesada>imagenesProcesadas\procesada_20250611_123359.jpg</FotoProcesada>
-            <Especie>Falciparum</Especie>
-            <Parasitemia>¦</Parasitemia>
-         </Entrada>
-         <Entrada>
             <Fecha>2025-06-09</Fecha>
             <Foto>imagenes\foto_20250611_123825.jpg</Foto>
             <Resultado>Malaria</Resultado>
             <FotoProcesada>imagenesProcesadas\procesada_20250611_123831.jpg</FotoProcesada>
             <Especie>Falciparum</Especie>
-            <Parasitemia>¦</Parasitemia>
+            <Parasitemia>166</Parasitemia>
          </Entrada>
       </Historial>
    </Paciente>
@@ -56,5 +56,29 @@
       <Apellido>Almeda</Apellido>
       <Edad>36</Edad>
       <Sexo>Hombre</Sexo>
+      <Historial>
+         <Entrada>
+            <Fecha>2025-06-02</Fecha>
+            <Foto>imagenes\foto_20250611_205206.jpg</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_205215.jpg</FotoProcesada>
+			         <Especie>Falciparum</Especie>
+            <Parasitemia>89</Parasitemia>
+         </Entrada>
+         <Entrada>
+            <Fecha>2025-06-25</Fecha>
+            <Foto>imagenes\foto_20250611_205922.jpg</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_205928.jpg</FotoProcesada>
+            <Especie>Vivax</Especie>
+            <Parasitemia>33</Parasitemia>
+         </Entrada>
+         <Entrada>
+            <Fecha>2025-07-04</Fecha>
+            <Foto>imagenes\foto_20250611_210220.png</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_210228.jpg</FotoProcesada>
+         </Entrada>
+      </Historial>
    </Paciente>
 </Pacientes>
