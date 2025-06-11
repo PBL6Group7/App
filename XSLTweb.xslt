@@ -62,7 +62,7 @@
 			   <td>
                 <img>
                   <xsl:attribute name="src">
-                    <xsl:value-of select="Fotoprocesada"/>
+                    <xsl:value-of select="FotoProcesada"/>
                   </xsl:attribute>
                   <xsl:attribute name="alt">
                     <xsl:value-of select="Nombre"/>
