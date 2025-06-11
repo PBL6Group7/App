@@ -1,5 +1,5 @@
-function Iout = preprocesado(Iin)
-load('modelo.mat', 'modelo1', 'features', 'mu', 'sigma');
+function [Iout,Iimg,Ipar] = preprocesado(Iin)
+load('RANmodelo.mat', 'modelo4', 'varNames', 'mu', 'sigma', 'X_train');
 I = Iin;
 
 if size(I, 3) == 3
@@ -115,15 +115,16 @@ else
 
     % Convertir a tabla y asegurar orden
     tablaCaracteristicas = array2table(caracteristicas, 'VariableNames', predictorNames);
-    tablaCaracteristicas = tablaCaracteristicas(:, features); % usar orden del modelo
+    tablaCaracteristicas = tablaCaracteristicas(:, varNames); % usar orden del modelo
 
     % Sustituir NaN por media de entrenamiento (mu)
-    X_nueva = tablaCaracteristicas{:, features};
+    X_nueva = tablaCaracteristicas{:, varNames};
 
     % Normalización
     X_nueva_normalized = (X_nueva - mu) ./ sigma;
 
-    clasesPredichas = predict (modelo1, X_nueva_normalized);
+    clasesPredichas = predict (modelo4, X_nueva_normalized);
+    clasesPredichas=categorical(clasesPredichas,{'Falciparum','Vivax'})
 
     conteos = countcats(clasesPredichas);
     cantidadFalciparum = conteos(1);
@@ -134,5 +135,23 @@ else
     else 
         resultadoFinal = sprintf ("Vivax")
     end 
+    imshow (I)
+    hold on
+    if ~isempty(centers)
+    
+        for j = 1:length(clasesPredichas)
+            viscircles(centers(j,:), radii(j), 'Color', 'r', 'LineWidth', 1.5);
+        end
+    end
+    hold off;
+    
+    frame = getframe(gca);      
+    I_parasitos = frame.cdata;
 end
 Iout = resultadoFinal; 
+Iimg= I_parasitos;
+if Iout=="Falciparum"
+    Ipar=cantidadFalciparum;
+else
+    Ipar=cantidadVivax;
+end
