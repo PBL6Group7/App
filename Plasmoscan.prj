@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\ainar\OneDrive\Documentos\GitHub\App\Plasmoscan.prj" location="C:\Users\ainar\OneDrive\Documentos\GitHub\App" name="Plasmoscan" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="1383917007" file="C:\Users\ainar\OneDrive\Documentos\GitHub\App\Plasmoscan.prj" location="C:\Users\ainar\OneDrive\Documentos\GitHub\App" name="Plasmoscan" preferred-package-location="C:\Users\ainar\OneDrive\Documentos\GitHub\App\Plasmoscan\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>Plasmoscan</param.appname>
     <param.icon />
     <param.icons />
@@ -81,6 +81,7 @@
     <fileset.package>
       <file>${PROJECT_ROOT}\CSSweb.css</file>
       <file>${PROJECT_ROOT}\pacientes.xml</file>
+      <file>${PROJECT_ROOT}\usuarios.xlsx</file>
       <file>${PROJECT_ROOT}\XSDweb.xsd</file>
       <file>${PROJECT_ROOT}\XSLTweb.xslt</file>
     </fileset.package>
