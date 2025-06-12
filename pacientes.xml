@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="XSLTweb.xslt"?><Pacientes>
   
    <Paciente>
-      <ID>1234</ID>
+      <ID>123456</ID>
       <Nombre>Ainara</Nombre>
       <Apellido>Lopez</Apellido>
       <Edad>20</Edad>
@@ -33,13 +33,12 @@
       </Historial>
    </Paciente>
    <Paciente>
-      <ID>2341</ID>
+      <ID>234123</ID>
       <Nombre>Ander</Nombre>
       <Apellido>Gonzalez</Apellido>
       <Edad>43</Edad>
       <Sexo>Hombre</Sexo>
       <Historial>
-     
          <Entrada>
             <Fecha>2025-06-17</Fecha>
             <Foto>imagenes\foto_20250611_123324.jpg</Foto>
@@ -57,7 +56,7 @@
       </Historial>
    </Paciente>
    <Paciente>
-      <ID>3452</ID>
+      <ID>345234</ID>
       <Nombre>Jorge</Nombre>
       <Apellido>Almeda</Apellido>
       <Edad>36</Edad>
@@ -88,7 +87,7 @@
       </Historial>
    </Paciente>
    <Paciente>
-      <ID>6789</ID>
+      <ID>678967</ID>
       <Nombre>Maren</Nombre>
       <Apellido>Fernandez</Apellido>
       <Edad>21</Edad>
