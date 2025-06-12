@@ -6,10 +6,37 @@
         <xs:element name="Paciente" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" type="xs:string"/>
-              <xs:element name="Nombre" type="xs:string"/>
-              <xs:element name="Apellido" type="xs:string"/>
-              <xs:element name="Edad" type="xs:integer"/>
+             <xs:element name="ID">
+			  <xs:simpleType>
+				<xs:restriction base="xs:string">
+				  <xs:pattern value="\d{6,}"/> <!-- Mínimo 6 dígitos -->
+				</xs:restriction>
+			  </xs:simpleType>
+			</xs:element>
+			<xs:element name="Nombre">
+			  <xs:simpleType>
+				<xs:restriction base="xs:string">
+				  <xs:pattern value="[A-Z][a-z]*"/> <!-- Empieza por mayúscula -->
+				</xs:restriction>
+			  </xs:simpleType>
+			</xs:element>
+
+			<xs:element name="Apellido">
+			  <xs:simpleType>
+				<xs:restriction base="xs:string">
+				  <xs:pattern value="[A-Z][a-z]*"/> <!-- Igual que Nombre -->
+				</xs:restriction>
+			  </xs:simpleType>
+			</xs:element>
+
+			<xs:element name="Edad">
+			  <xs:simpleType>
+				<xs:restriction base="xs:integer">
+				  <xs:minInclusive value="0"/>
+				  <xs:maxInclusive value="120"/>
+				</xs:restriction>
+			  </xs:simpleType>
+			</xs:element>
               <xs:element name="Sexo">
                 <xs:simpleType> 
                   <xs:restriction base="xs:string"> 
