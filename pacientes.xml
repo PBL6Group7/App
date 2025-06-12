@@ -24,6 +24,12 @@
             <Especie>Falciparum</Especie>
             <Parasitemia>206</Parasitemia>
          </Entrada>
+         <Entrada>
+            <Fecha>2025-06-27</Fecha>
+            <Foto>imagenes\foto_20250611_220145.png</Foto>
+            <Resultado>Malaria</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250611_220155.jpg</FotoProcesada>
+         </Entrada>
       </Historial>
    </Paciente>
    <Paciente>
@@ -78,6 +84,33 @@
             <Foto>imagenes\foto_20250611_210220.png</Foto>
             <Resultado>Malaria</Resultado>
             <FotoProcesada>imagenesProcesadas\procesada_20250611_210228.jpg</FotoProcesada>
+         </Entrada>
+      </Historial>
+   </Paciente>
+   <Paciente>
+      <ID>6789</ID>
+      <Nombre>Maren</Nombre>
+      <Apellido>Fernandez</Apellido>
+      <Edad>21</Edad>
+      <Sexo>Mujer</Sexo>
+      <Historial>
+         <Entrada>
+            <Fecha>2025-06-17</Fecha>
+            <Foto>imagenes\foto_20250612_083701.jpg</Foto>
+            <Resultado>Sano</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250612_083711.jpg</FotoProcesada>
+         </Entrada>
+         <Entrada>
+            <Fecha>2025-06-24</Fecha>
+            <Foto>imagenes\foto_20250612_084027.jpg</Foto>
+            <Resultado>Sano</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250612_084032.jpg</FotoProcesada>
+         </Entrada>
+         <Entrada>
+            <Fecha>2025-06-17</Fecha>
+            <Foto>imagenes\foto_20250612_084404.jpg</Foto>
+            <Resultado>Sano</Resultado>
+            <FotoProcesada>imagenesProcesadas\procesada_20250612_084408.jpg</FotoProcesada>
          </Entrada>
       </Historial>
    </Paciente>
